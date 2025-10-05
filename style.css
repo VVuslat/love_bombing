@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #e91e63;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+}
+
+section {
+    background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 100%);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.2);
+}
+
+h2 {
+    color: #e91e63;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.message-box {
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.3em;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px 0;
+    font-style: italic;
+    min-height: 60px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(245, 87, 108, 0.4);
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.name-input,
+.date-input {
+    padding: 12px 20px;
+    border: 2px solid #f093fb;
+    border-radius: 20px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+    min-width: 150px;
+}
+
+.name-input:focus,
+.date-input:focus {
+    border-color: #e91e63;
+}
+
+.heart-icon {
+    font-size: 2em;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    min-height: 50px;
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.love-counter,
+.love-meter {
+    text-align: center;
+}
+
+.hearts-container {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2em;
+    animation: float 3s ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(200px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.hearts-animation {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #e91e63;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+}
