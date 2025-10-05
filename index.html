@@ -5,52 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aşk Sitesi - Love Bombing</title>
     <link rel="stylesheet" href="style.css">
+    <!-- D3.js CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- GSAP CDN (opsiyonel, fallback script.js içinde) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>💕 Aşk Sitesi 💕</h1>
-            <p class="subtitle">Sevgiyle dolu anlar için...</p>
-        </header>
-
-        <main>
-            <section class="love-message">
-                <div class="message-box">
-                    <h2>Günün Aşk Mesajı</h2>
-                    <p id="loveQuote" class="quote"></p>
-                    <button onclick="getNewQuote()" class="btn">Yeni Mesaj</button>
-                </div>
-            </section>
-
-            <section class="love-meter">
-                <h2>Aşk Ölçer</h2>
-                <div class="input-group">
-                    <input type="text" id="name1" placeholder="İlk isim" class="name-input">
-                    <span class="heart-icon">❤️</span>
-                    <input type="text" id="name2" placeholder="İkinci isim" class="name-input">
-                </div>
-                <button onclick="calculateLove()" class="btn">Aşkı Hesapla</button>
-                <div id="result" class="result"></div>
-            </section>
-
-            <section class="love-counter">
-                <h2>Birlikte Geçirilen Zaman</h2>
-                <input type="date" id="startDate" class="date-input">
-                <button onclick="calculateDays()" class="btn">Hesapla</button>
-                <div id="daysResult" class="result"></div>
-            </section>
-
-            <section class="hearts-animation">
-                <div class="hearts-container" id="heartsContainer"></div>
-                <button onclick="showHearts()" class="btn">Kalpler Yağmuru 💕</button>
-            </section>
-        </main>
-
-        <footer>
-            <p>❤️ Love Bombing - 2025 ❤️</p>
-        </footer>
-    </div>
-
+    <div id="love-container" aria-live="polite"></div>
+    <canvas id="particle-canvas"></canvas>
     <script src="script.js"></script>
 </body>
 </html>

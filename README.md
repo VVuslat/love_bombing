@@ -1,43 +1,33 @@
-# love_bombing
+# Sürpriz Aşk (Love Bombing)
 
-## Aşk Sitesi 💕
+D3.js ile dinamik, tek sayfa sürpriz aşk sitesi. Büyük kalplere tıkla, farklı dillerde "seni seviyorum" mesajlarını ve kalp partiküllerini keşfet!
 
-Sevgiyle dolu bir web sitesi! Türkçe aşk mesajları, aşk uyumluluğu hesaplayıcı ve daha fazlası.
+## Özellikler
+- Siyah arka plan, hareketli bordo kalpler
+- Tıklanan kalpte 8 saniyelik büyüme ve dil döngüsü
+- D3.js ile particle/kalp efekti (canvas)
+- Responsive ve erişilebilir
+- Statik, tamamen client-side (server yok)
 
-### Özellikler
+## Deploy (GitHub Pages)
+1. Bu repoyu kendi hesabına **forkla** veya klonla.
+2. Değişiklikleri `main` branch'ine **pushla**.
+3. GitHub'da repo ayarlarına gir: **Settings → Pages → Source: main / root** seç.
+4. Sayfan birkaç dakika içinde şu adreste yayında olur:
+	`https://<github-username>.github.io/<repo-ismi>`
 
-- 💌 Günlük aşk mesajları
-- 💕 Aşk uyumluluğu hesaplayıcı
-- 📅 Birlikte geçirilen zamanı hesaplama
-- 💖 Kalp yağmuru animasyonu
-- 🎨 Modern ve romantik tasarım
+> Not: Eğer repo private ise, Pages için public yapman gerekir.
 
-### Kullanım
+## Kullanılanlar
+- [D3.js](https://d3js.org/) (CDN)
+- [GSAP](https://greensock.com/gsap/) (CDN, opsiyonel)
 
-Web sitesini görüntülemek için `index.html` dosyasını bir web tarayıcısında açın.
+## Mobil Performans
+- Mobilde particle spawn limiti otomatik azaltılır.
 
-```bash
-# Basitçe tarayıcınızda açın
-open index.html
-```
+---
 
-veya bir local server ile:
-
-```bash
-# Python 3 ile
-python -m http.server 8000
-
-# veya Python 2 ile
-python -m SimpleHTTPServer 8000
-```
-
-Ardından tarayıcınızda `http://localhost:8000` adresine gidin.
-
-### Teknolojiler
-
-- HTML5
-- CSS3 (Animasyonlar ve Gradients)
-- Vanilla JavaScript
+Kodda açıklayıcı yorumlar ve özelleştirme noktaları mevcuttur.
 - Responsive Design
 
 ### Lisans
